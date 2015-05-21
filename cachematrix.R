@@ -4,7 +4,7 @@ makeCacheMatrix <- function(x = matrix()) {
     x <<- y
     m <<- NULL
   }
-  get <- function() x ##returns matrix inverse if available
+  get <- function() x ##returns matrix (non-inverse) if available
   setmatrixinv <- function(matrixinv) m <<- matrixinv ##load matrix inverse into cache
   getmatrixinv <- function() m ##return matrix inverse
   list(set = set, get = get,
